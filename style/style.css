@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 1px solid #D9D9D9;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(20px);
+}
+
+#logo {
+    width: 20vw;
+    height: 8vh;
+}
+
+.nav_list {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+.burder-menu {
+  display: none;
+}
+
+
+.nav_list>ul,
+li,
+a {
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    padding: 12px;
+}
+
+#shopping-cart {
+    width: 15vw;
+    height: 5vh;
+}
+
+/* the first block with girl */
+.introduction {
+    background-image: url(/images/background\ girl.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    
+
+
+}
+
+.introduction h1 {
+    color: #000;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10vw;
+    margin-bottom: 3%;
+}
+
+.orange-word {
+    color: #FF9C00;
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.search-field{
+border-radius: 100px;
+background: rgba(0, 0, 0, 0.20);
+backdrop-filter: blur(20px);
+width: 25vw;
+margin-left: 10vw;
+height: 5vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+.search-field input{
+width: 20vw;
+height: 5vh;
+font-style: normal;
+font-weight: 400;
+line-height: normal;  
+border: none;
+background-color: transparent;
+
+}
+::-webkit-input-placeholder{
+color: white;
+font-size: 1.5rem;
+padding: 4%;
+}
+.search-field button{
+width: 6vw;
+height: 4vh;
+border-radius: 100px;
+background: #FF9C00;
+margin-right: 1%;
+border: none;
+color: white;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+.nav_list{
+    display: none;
+}
+ .burder-menu {
+display: block;
+height: 30px;
+  }
+  .introduction{
+   height: 80vh;
+   background-size: contain;
+
+  }
+  .introduction h1 {
+    font-size: 2.5rem;
+    margin-top: 30%;
+    margin-left: 10px;
+  }
+  .orange-word{
+    font-size: 2.5rem;
+  }
+  .search-field{
+    width: 80%;
+    height: 10%;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .search-field input {
+    width: 50%;
+  }
+.search-field button{
+    width: 20%;
+    font-size: 12px;
+}
+::-webkit-input-placeholder{
+      font-size: 2vw;
+}
+#shopping-cart{
+    width: 30px;
+}
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+   .nav_list ul, li, a{
+    font-size: 1vw;
+    padding: 5px;
+  }
+  #logo{
+    width: 120px;
+  }
+  #shopping-cart{
+    width: 40px;
+  }
+.introduction{
+   height: 100vh;
+   background-size: contain;
+  
+}
+.introduction h1 {
+    font-size: 3rem;
+    margin-top: 50%;
+    margin-left: 10px;
+  }
+  .orange-word{
+    font-size: 3rem;
+  }
+  .search-field{
+    width: 80%;
+    height: 10%;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .search-field input {
+    width: 50%;
+    height: 10vh;
+  }
+.search-field button{
+    width: 20%;
+    font-size: 15px;
+    margin-right: 10px;
+}
+::-webkit-input-placeholder{
+      font-size: 2vw;
+}
+}
+@media only screen and (min-width: 1201px) and (max-width: 1900px) {
+  .nav_list ul, li, a{
+    font-size: 1.5vw;
+    padding: 5px;
+  }
+.search-field{
+    width: 50%;
+    height: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  .search-field input {
+    width: 50%;
+    height: 10vh;
+  }
+.search-field button{
+    width: 20%;
+    font-size: 15px;
+    margin-right: 10px;
+}
+::-webkit-input-placeholder{
+      font-size: 1vw;
+}
+}
+.shop-categories{
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.category-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    gap: 40px; 
+}
+.category-items .item{
+width: 13vw;
+}
+.item img{
+    width: 13vw;
+}
+.shop-categories h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #000;
+font-size: 3rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30vw;
+}
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+   .shop-categories h1{
+font-size: 2rem;
+width: 100%;
+  }
+}
+
+
+
+/* best deals section */
+
+.best-deals{
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.deal-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 40px; 
+}
+.cards{
+width: 20vw;
+
+}
+.cards img{
+    width: 20vw;
+    margin-bottom: 2%;
+}
+.best-deals h1{
+margin-bottom: 3%;
+color: #000;
+font-size: 3rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30vw;
+}
+
+.cards h2{
+color: #000;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+margin-bottom: 2%;
+}
+.cards h3{
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 2%;
+}
+.cards p{
+color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 5%;
+}
+.cards button{
+width:5vw;
+height: 3vh;
+color: #FFF;
+text-align: center;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 100px;
+border: 1px solid #FF9C00;
+background: #FF9C00;
+}
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+   .cards button{
+    width: 12vw;
+    height: 5vh;
+    font-size: 12px;
+  }
+  .cards h2{
+    font-size: 24px;
+    font-weight: 00;
+  }
+  .cards h3{
+    font-size: 20px;
+  }
+  .best-deals h1{
+font-size: 2rem;
+width: 100%;
+  }
+}
+.choose-by-shops{
+     max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.shop-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 40px; 
+}
+.shop-name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 20vw;
+    height: 8vh;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    box-shadow:  0 2px 10px 2px rgba(182, 182, 182, 0.75)
+}
+.image-round{
+width: 14%;
+height: 70%;
+border-radius: 45px;
+background: #E6E6E6;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.image-round img{
+position: absolute;
+}
+.choose-by-shops h1{
+margin-bottom: 3%;
+color: #000;
+font-size: 3rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30vw;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .choose-by-shops h1{
+    font-size: 2rem;
+    width: 100%;
+  }
+  .image-round{
+    display: none;
+  }
+  .shop-name h2{
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    color: #FF9C00;
+  }
+   .shop-name h3{
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+   .image-round{
+width: 15%;
+height: 60%;
+border-radius: 45px;
+  }
+  .image-round img{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* the most popular products */
+.the-most-popular-products{
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+.popular-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 40px; 
+}
+.cards{
+width: 20vw;
+
+}
+.cards img{
+    width: 20vw;
+    margin-bottom: 2%;
+}
+.the-most-popular-products h1{
+margin-bottom: 3%;
+color: #000;
+font-size: 3rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30vw;
+}
+
+.cards h2{
+color: #000;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+margin-bottom: 2%;
+}
+.cards h3{
+    color: #000;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 2%;
+}
+.cards p{
+color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 5%;
+}
+.cards button{
+width:5vw;
+height: 3vh;
+color: #FFF;
+text-align: center;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 100px;
+border: 1px solid #FF9C00;
+background: #FF9C00;
+}
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+   .cards button{
+    width: 12vw;
+    height: 5vh;
+    font-size: 12px;
+  }
+  .cards h2{
+    font-size: 24px;
+    font-weight: 00;
+  }
+  .cards h3{
+    font-size: 20px;
+  }
+  .the-most-popular-products h1{
+font-size: 2rem;
+width: 100%;
+  }
+}
